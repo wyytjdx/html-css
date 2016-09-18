@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#id1{
+			border:1px solid green;
+		}
+		.list{
+			border: 1px solid blue;
+		}
+		ul{
+			border: 1px solid red;
+		}
+		#header .list li{
+			background-color: red;
+		}
+		#header .list .active{
+			background-color: blue;
+		}
+
+		/*选择器权重：
+		id     100；
+		class  10；
+		标签   1；
+		同级谁在后面先算谁；
+		不同级按相加权重！*/
+	</style>
+</head>
+<body>
+	<div id="header">
+		<ul id="id1" class="list">
+			<li>1</li>
+			<li>2</li>
+			<li class="active active2">3</li>
+		</ul>
+	</div>
+</body>
+</html>
